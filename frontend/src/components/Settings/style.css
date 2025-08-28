@@ -1,0 +1,115 @@
+.waiter-requests-container{
+    height: 35vh;
+    overflow-y: auto;
+}
+
+.requests-container h1{
+    color: var(--cor-secundaria);
+    text-align: center;
+}
+
+.requests-container p{
+    color: var(--cor-principal);
+    width: 250px;
+    border-radius: 30px;
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px auto auto;
+    background-color: var(--cor-secundaria);
+}
+
+.request{
+    margin: 20px auto auto;
+    background-color: var(--cor-secundaria);
+    width: 250px;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.settings-container{
+    position: absolute;
+    bottom: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px 15px 0 0;
+    padding-bottom: 20px;
+    background-color: var(--cor-secundaria);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.settings-btn{
+    width: 350px;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.settings-btn:hover{
+    cursor: pointer;
+}
+
+.add-btn{
+    margin-bottom: -20px;
+    color: var(--cor-principal);
+    background-color: var(--cor-secundaria);
+    border: 2px solid var(--cor-principal);
+}
+
+.add-waiter-btn{
+    color: var(--cor-secundaria);
+    background-color: var(--cor-principal);
+}
+
+.request-name{
+
+}
+
+.request-type{
+    color: var(--cor-quartiaria);
+    font-weight: bold;
+}
+
+.request-btn-response{
+    width: fit-content;
+    position: relative;
+    padding: 15px;
+}
+
+.request-btn-response:hover{
+    cursor: pointer;
+    scale: 1.1;
+}
+
+.request-btn-response:active{
+    scale: 1.2;
+}
+
+.request-info{
+    margin-top: 10px;
+    font-weight: bold;
+    color: #272f85;
+}
+
+.options-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: -20px;
+}
+
+.accept{
+    background-color: #567C52;
+    color: var(--cor-secundaria);
+}
+
+.reject{
+    background-color: #cc2c2c;
+    color: var(--cor-secundaria);
+}

@@ -1,0 +1,51 @@
+.img-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.img {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: black;
+    transition: 500ms all;
+}
+
+.settings {
+    background-image: url("../../assets/icons/settings.svg");
+}
+
+.home {
+    background-image: url("../../assets/icons/home.svg");
+}
+
+.logout {
+    background-image: url("../../assets/icons/logout.svg");
+}
+
+.clubsInfo {
+    background-image: url("../../assets/icons/clubsInfo.svg");
+}
+
+.selected .img {
+    scale: 110%;
+    box-shadow: 0 0 1px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 8px; /* opcional, pra dar uma suavizada nas bordas */
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.disabled{
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.disabled:hover{
+    scale: 0.9;
+}

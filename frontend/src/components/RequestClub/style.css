@@ -1,0 +1,135 @@
+.request-club-container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    border-radius: 25px;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.25);
+    width: 380px;
+
+    z-index: 1000;
+
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    color: black;
+    padding: 20px;
+}
+
+.container-quantities h1{
+    font-size: 25px;
+}
+
+.container-quantities input{
+    display: flex;
+    outline: none;
+    border: 0;
+    width: 50px;
+    text-align: center;
+}
+
+.container-quantities input[type=number]::-webkit-inner-spin-button,
+.container-quantities input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.quantity-row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.value-input{
+    display: flex;
+    align-items: center;
+}
+
+.quantity-row span{
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    background-color: var(--cor-terciaria);
+    color: white;
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.container-quantities [type="button"]{
+    display: inline-block;
+    width: fit-content;
+    height: fit-content;
+    border: none;
+    background-color: var(--cor-principal);
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 15px;
+    margin: 0;
+    outline: none;
+}
+
+.request-club-container button{
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    color: var(--cor-principal);
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid var(--cor-principal);
+}
+
+.request-club-container button:hover{
+    background-color: var(--cor-terciaria);
+    cursor: pointer;
+    color: white;
+}
+
+
+#cancel-button{
+    margin-top: 10px;
+    color: white;
+    border: none;
+    background-color: #567C52;
+}
+
+#cancel-button:hover{
+    background-color: #cc2c2c;
+}
+
+
+.input-container{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.result-true{
+    background-color: var(--cor-principal);
+}
+
+.result-false{
+    background-color: #cc2c2c;
+}
+.form-group input[type="checkbox"] {
+    margin-top: 8px;
+    align-self: flex-start;
+}
+
+input[type=date]{
+    margin-top: 10px;
+}
+
+button[type=submit]{
+    margin-top: 15px;
+}

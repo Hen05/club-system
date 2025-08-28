@@ -1,0 +1,155 @@
+.no-club{
+    text-align: center;
+    color: var(--cor-secundaria);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.club-info{
+    width: 100%;
+    max-width: 390px;
+    color: white;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.status-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.actual-status{
+    margin-top: 5px;
+    color: var(--cor-terciaria);
+    padding: 5px 8px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.club-history-container{
+    width: 100vw;
+    margin: 10px auto auto;
+    height: 250px;
+    overflow-y: scroll;
+}
+
+
+
+.club-history-table{
+    outline: none;
+    font-size: 14px;
+    width: 100%;
+    border-collapse: collapse;
+    overflow-y: auto;
+    flex-flow: column nowrap;
+}
+
+.club-history-table tr:first-child td{
+    font-weight: normal;
+    background-color: #fff;
+    color: var(--cor-principal);
+}
+
+.club-history-table tr{
+    width: 100%;
+    color: #fff;
+    font-weight: bold;
+    border-bottom: 2px solid var(--cor-terciaria);
+}
+
+.club-history-table td{
+    padding: 13px;
+}
+
+.container-club-btns{
+    position: absolute;
+    bottom: 90px;
+    padding-bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    border-radius: 15px 15px 0 0;
+    background-color: var(--cor-secundaria);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transition: all 500ms;
+}
+
+@media (min-width: 500px) {
+    .club-history-container{
+        max-width: 400px;
+    }
+    .container-club-btns{
+
+        max-width: 400px;
+    }
+}
+
+.request-btn{
+    color: var(--cor-principal);
+    margin-bottom: -20px;
+    background-color: var(--cor-secundaria);
+    border: 2px solid var(--cor-principal);
+}
+
+.empty-btn{
+    color: var(--cor-secundaria);
+    background-color: var(--cor-principal);
+}
+
+.disabled-btn{
+    color: rgba(28, 18, 18, 0.3);
+    background-color: #1010104D;
+    cursor: not-allowed;
+}
+
+.empty-btn:disabled{
+    color: rgba(28, 18, 18, 0.3);
+    background-color: #1010104D;
+    cursor: not-allowed;
+}
+
+.edit-btn{
+    background-color: var(--cor-terciaria);
+    color: var(--cor-secundaria);
+    margin-bottom: -20px;
+}
+
+.rebuy-btn{
+    background-color: var(--cor-principal);
+    color: var(--cor-secundaria);
+}
+
+.hide-buttons span{
+    display: block;
+    margin: auto;
+    background-image: url("../../assets/icons/arrowDown.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+}
+
+.hide-container{
+    transform: translate(-50%, 82%);
+}
+
+.show-buttons{
+    transform: rotate(180deg);
+}
+.hide-buttons{
+    position: absolute;
+    top: 0;
+    font-size: 18px;
+    padding-top: 5px;
+    color: var(--cor-principal);
+    font-weight: bolder;
+    text-align: center;
+    width: 100%;
+}

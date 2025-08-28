@@ -1,0 +1,156 @@
+.add-club-container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    border-radius: 25px;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.25);
+    width: 380px;
+
+    z-index: 1000;
+
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    color: black;
+    padding: 20px;
+}
+
+.add-club-container h1{
+    font-size: 25px;
+}
+
+.add-club-container input{
+    color: black;
+    display: block;
+    border-radius: 15px;
+    width: 250px;
+    padding: 10px;
+    outline: none;
+    border: 1px solid black;
+    margin-top: 20px;
+}
+
+.add-club-container select{
+    display: block;
+    border-radius: 15px;
+    width: 250px;
+    padding: 10px;
+    outline: none;
+    border: 1px solid black;
+    margin-top: 20px;
+}
+
+.add-club-container button{
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    color: var(--cor-principal);
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid var(--cor-principal);
+}
+
+.add-club-container button:hover{
+    background-color: var(--cor-terciaria);
+    cursor: pointer;
+    color: white;
+}
+
+.otherDistilled{
+    margin-top: 20px;
+}
+
+.otherWaiter{
+    margin-top: 20px;
+}
+
+.otherDrink{
+    margin-top: 20px;
+}
+
+.input-container{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.checkbox-container{
+    position: relative;
+    margin: 10px auto auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.checkbox-container input[type="checkbox"] {
+    position: relative;
+    top: -4.5px;
+    appearance: none;
+    border: 2px solid #555;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    background-color: #fff;
+    width: 20px;
+}
+
+.checkbox-container input[type="checkbox"]:checked {
+    background-color: #007bff;
+}
+
+
+.label-checkbox{
+    position: absolute;
+    font-weight: bold;
+    left: 30px;
+}
+
+.result-checkbox{
+    position: relative;
+    right: 5px;
+    padding: 5px;
+    color: white;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+.result-true{
+    background-color: var(--cor-principal);
+}
+
+.result-false{
+    background-color: #cc2c2c;
+}
+.form-group input[type="checkbox"] {
+    margin-top: 8px;
+    align-self: flex-start;
+}
+
+input[type=date]{
+    margin-top: 10px;
+}
+
+button[type=submit]{
+    margin-top: 15px;
+}
+
+#cancelButton{
+    margin-top: 10px;
+    color: white;
+    border: none;
+    background-color: #567C52;
+}
+
+#cancelButton:hover{
+    background-color: #cc2c2c;
+}

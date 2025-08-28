@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --cor-principal: #465045;
+    --cor-secundaria: #E2D9D4;
+    --cor-terciaria: #567C52;
+    --cor-quartiaria: #777777;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", "sans-serif";
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--cor-principal) !important;
+}
+
+.background-kojima-blur{
+    background-image: url("./assets/images/backgroundKojimaBlur.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100dvh;
+}
+
+.logo-no-bg{
+    width: 500px;
+    height: 400px;
+    background-image: url("./assets/logo/kojimaLogo-noBg.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+    transition: all 500ms;
+}
+
+.logo-top{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    background-image: url("./assets/logo/kojimaLogo-noBg.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: -100px auto;
+}
+
+@media (min-width: 700px) {
+    .logo-no-bg{
+        width: 600px;
+        height: 500px;
+    }
+}
+
+@media (min-width: 600px) {
+    .navbar{
+        width: 400px !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+    }
+}
+
+.navbar{
+    background-color: var(--cor-secundaria);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    border-radius: 10px 10px 0 0;
+    flex-flow: column wrap;
+    width: 100%;
+    height: 100px;
+}
+
+.nav-item{
+    position: relative;
+    height: 100%;
+    transition: 500ms all;
+}
+
+.nav-item:hover{
+    cursor: pointer;
+    scale: 110%;
+}
+
+button{
+    width: 70%;
+    margin-top: 40px;
+    border: none;
+    border-radius: 15px;
+    font-weight: bold;
+    padding: 15px 40px;
+    transition: 500ms all;
+}

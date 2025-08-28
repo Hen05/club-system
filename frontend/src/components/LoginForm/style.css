@@ -1,0 +1,110 @@
+.login-form-container{
+    position: absolute;
+    width: 100%;
+    height: 50dvh;
+    border-radius: 40px 40px 0 0;
+    background-color: var(--cor-secundaria);
+    bottom: 0;
+    transition: all 500ms;
+}
+
+@media (min-width: 700px) {
+    .login-form-container{
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50%;
+    }
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.login-input{
+    margin-top: 20px;
+    padding: 10px;
+    width: 70%;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid var(--cor-terciaria);
+    transition: 500ms all;
+}
+
+.login-input:focus{
+    outline: none;
+    scale: 110%;
+}
+
+.password-container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.login-button{
+    color: var(--cor-secundaria);
+    background-color: var(--cor-principal);
+
+}
+
+.login-button:hover{
+    cursor: pointer;
+    scale: 110%;
+}
+
+.credits{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: lighter;
+    font-size: 10px;
+}
+
+.handle-visibility-password{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-30%);
+    left: 75%;
+    width: 20px;
+    height: 20px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 500ms all;
+}
+
+.hide-password{
+    background-image: url("../../assets/icons/hide-password.svg");
+}
+
+.show-password{
+    background-image: url("../../assets/icons/show-password.svg");
+}
+
+.handle-visibility-password:hover{
+    cursor: pointer;
+    scale: 110%;
+}
+
+.error{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 30px;
+    color: red;
+    font-weight: bold;
+    transition: 500ms all;
+}
+
+.open-logo-no-bg{
+    top: 80px !important;
+}
+.open-login-form-container{
+    width: 100%;
+    height: 80dvh;
+}
